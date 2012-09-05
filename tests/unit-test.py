@@ -50,6 +50,7 @@ history = pubnub.history({
     'channel' : crazy,
     'limit'   : 1
 })
+
 test(
     history[0].encode('utf-8') == crazy,
     'History Message: ' + history[0]
